@@ -140,6 +140,21 @@ textarea{min-height:110px;resize:vertical}
 
 footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* Mi cocina */
+.kitchen{background:var(--ink);color:var(--bg)}
+.kitchen .label,.kitchen .sec-head p{color:color-mix(in srgb,var(--bg) 72%,var(--ink))}
+.recipes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+@media (max-width:900px){.recipes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.recipes{grid-template-columns:1fr}}
+.recipe{display:flex;flex-direction:column;gap:12px;min-width:0}
+.recipe .photo{aspect-ratio:1/1}
+.specs{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--mono);font-size:.75rem}
+.specs span{border:1px solid color-mix(in srgb,var(--bg) 35%,var(--ink));border-radius:999px;padding:3px 10px}
+.recipe details{border-top:1px dashed color-mix(in srgb,var(--bg) 35%,var(--ink));padding-top:10px}
+.recipe summary{cursor:pointer;font-weight:600;color:var(--saffron)}
+.recipe ul{margin:10px 0 0;padding-left:18px;font-size:.95rem;color:color-mix(in srgb,var(--bg) 80%,var(--ink))}
+.kitchen .btn{background:var(--saffron);border-color:var(--saffron);color:var(--saffron-ink)}
 </style>
 </head>
 <body>
@@ -149,6 +164,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <a class="logo" href="#inicio"><b>QJ</b> Foodie</a>
     <ul>
       <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#cocina">Mi cocina</a></li>
       <li><a href="#escala">Escala QJ</a></li>
       <li><a href="#instagram">Instagram</a></li>
       <li><a href="#colabora">Colabora</a></li>
@@ -160,12 +176,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <main id="inicio">
   <div class="wrap hero">
     <div>
-      <p class="label">Panamá · Fondas · Comida callejera · Restaurantes</p>
+      <p class="label">Panamá · Reseñas · Recetas caseras</p>
       <h1 style="margin-top:14px">Pruebo la comida de Panamá para que tú sepas <mark>dónde vale la pena.</mark></h1>
-      <p class="lede">Cada lugar pasa por la Escala QJ: sabor, precio, experiencia y la pregunta que importa, ¿volvería?</p>
+      <p class="lede">Reseño fondas y restaurantes con la Escala QJ, y también cocino en casa y subo mis platos con la receta.</p>
       <div class="cta">
         <a class="btn" href="#resenas">Ver reseñas</a>
-        <a class="btn ghost" href="#colabora">Invítame a tu restaurante</a>
+        <a class="btn ghost" href="#cocina">Ver mis recetas</a>
       </div>
     </div>
     <aside class="ticket" aria-label="Última reseña">
@@ -196,6 +212,17 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         </div>
       </div>
       <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="cocina" class="kitchen">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="label">Mi cocina · ejemplos</p><h2 style="margin-top:8px">También cocino</h2></div>
+        <p>Recetas que preparo en casa y subo a Instagram, con tiempo, porciones y lo que necesitas. Si las haces, etiquétame.</p>
+      </div>
+      <div class="recipes" id="recipes"></div>
+      <div style="margin-top:36px"><a class="btn" href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Ver mis platos en Instagram</a></div>
     </div>
   </section>
 
@@ -234,7 +261,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </div>
       <div class="stories">
         <div class="story"><div class="ring"><div style="--tone:var(--tile-b)"></div></div>Fondas</div>
-        <div class="story"><div class="ring"><div style="--tone:var(--tile-a)"></div></div>Desayunos</div>
+        <div class="story"><div class="ring"><div style="--tone:var(--tile-a)"></div></div>Mi cocina</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-e)"></div></div>Postres</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-c)"></div></div>Ruta en carro</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-f)"></div></div>Mariscos</div>
@@ -252,13 +279,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
           <li>Reseña en video (Reel / TikTok)<span>1 video</span></li>
           <li>Cobertura en historias<span>3–5 historias</span></li>
           <li>Fotos del menú para tus redes<span>10 fotos</span></li>
+          <li>Receta con tu producto<span>1 video + receta</span></li>
           <li>Evento o apertura<span>a cotizar</span></li>
         </ul>
       </div>
       <form id="form" novalidate>
         <label for="f-nombre">Nombre del negocio<input id="f-nombre" type="text" required placeholder="Fonda Doña Mari"></label>
         <label for="f-tipo">Tipo de colaboración
-          <select id="f-tipo"><option>Reseña en video</option><option>Historias</option><option>Fotos del menú</option><option>Evento o apertura</option></select>
+          <select id="f-tipo"><option>Reseña en video</option><option>Historias</option><option>Fotos del menú</option><option>Receta con mi producto</option><option>Evento o apertura</option></select>
         </label>
         <label for="f-msg">Mensaje<textarea id="f-msg" placeholder="Cuéntame del lugar y del plato que quieres que pruebe."></textarea></label>
         <button class="btn" type="submit" style="justify-self:start">Enviar propuesta</button>
@@ -268,7 +296,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   </section>
 </main>
 
-<footer><div class="wrap"><span>QJ Foodie · Reseñas honestas de comida</span><a href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Instagram @jose_q116</a></div></footer>
+<footer><div class="wrap"><span>QJ Foodie · Reseñas honestas y recetas caseras</span><a href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Instagram @jose_q116</a></div></footer>
 
 <script>
 const REVIEWS=[
@@ -294,6 +322,19 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
   render(b.dataset.f);
 }));
 render('todo');
+
+const RECIPES=[
+  {n:"Sancocho de gallina",t:"--tile-a",time:"1 h 30 min",por:"6 porciones",lvl:"Fácil",ing:["1 gallina de patio en presas","2 lb de ñame","Culantro, cebolla y ajo","Orégano y sal al gusto"]},
+  {n:"Ceviche de corvina",t:"--tile-c",time:"25 min",por:"4 porciones",lvl:"Fácil",ing:["1 lb de corvina en cubos","Jugo de 12 limones","Cebolla morada y culantro","Ají chombo sin semillas"]},
+  {n:"Patacones con ropa vieja",t:"--tile-b",time:"1 h 10 min",por:"4 porciones",lvl:"Media",ing:["3 plátanos verdes","1 lb de falda de res","Pimentón, cebolla y tomate","Aceite para freír"]}
+];
+document.getElementById('recipes').innerHTML=RECIPES.map(r=>`
+  <article class="recipe">
+    <div class="photo" style="--tone:var(${r.t})"><span class="ph">Foto de tu plato</span></div>
+    <h3>${r.n}</h3>
+    <div class="specs"><span>${r.time}</span><span>${r.por}</span><span>${r.lvl}</span></div>
+    <details><summary>Ingredientes</summary><ul>${r.ing.map(i=>`<li>${i}</li>`).join('')}</ul></details>
+  </article>`).join('');
 
 const ids=['sabor','precio','exp','volver'];
 function calc(){
