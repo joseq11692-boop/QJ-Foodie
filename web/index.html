@@ -160,8 +160,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <main id="inicio">
   <div class="wrap hero">
     <div>
-      <p class="label">Reseñas honestas · Comida callejera · Restaurantes</p>
-      <h1 style="margin-top:14px">Pruebo la comida para que tú sepas <mark>dónde vale la pena.</mark></h1>
+      <p class="label">Panamá · Fondas · Comida callejera · Restaurantes</p>
+      <h1 style="margin-top:14px">Pruebo la comida de Panamá para que tú sepas <mark>dónde vale la pena.</mark></h1>
       <p class="lede">Cada lugar pasa por la Escala QJ: sabor, precio, experiencia y la pregunta que importa, ¿volvería?</p>
       <div class="cta">
         <a class="btn" href="#resenas">Ver reseñas</a>
@@ -170,9 +170,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     </div>
     <aside class="ticket" aria-label="Última reseña">
       <div class="t-head"><strong>COMANDA #0127</strong>Última visita · mesa 4</div>
-      <div class="row"><span>1× Tacos al pastor</span><span>$4.50</span></div>
-      <div class="row"><span>1× Agua de horchata</span><span>$2.00</span></div>
-      <div class="row"><span>1× Salsa de la casa</span><span>gratis</span></div>
+      <div class="row"><span>1× Sancocho de gallina</span><span>$4.50</span></div>
+      <div class="row"><span>1× Patacones</span><span>$2.00</span></div>
+      <div class="row"><span>1× Chicheme</span><span>$1.50</span></div>
       <div class="row" style="margin-top:8px"><span>Sabor</span><span>9.0</span></div>
       <div class="row"><span>Precio</span><span>9.5</span></div>
       <div class="row"><span>Experiencia</span><span>7.5</span></div>
@@ -182,7 +182,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     </aside>
   </div>
 
-  <div class="ticker" aria-hidden="true"><span>Tacos <i>/</i> Birria <i>/</i> Pupusas <i>/</i> Ramen <i>/</i> Hamburguesas <i>/</i> Postres <i>/</i> Pizza <i>/</i> Mariscos <i>/</i> Tacos <i>/</i> Birria <i>/</i> Pupusas <i>/</i> Ramen <i>/</i> Hamburguesas <i>/</i> Postres <i>/</i> Pizza <i>/</i> Mariscos <i>/</i></span></div>
+  <div class="ticker" aria-hidden="true"><span>Sancocho <i>/</i> Patacones <i>/</i> Carimañolas <i>/</i> Ceviche de corvina <i>/</i> Hojaldras <i>/</i> Arroz con pollo <i>/</i> Raspao <i>/</i> Tamal de olla <i>/</i> Sancocho <i>/</i> Patacones <i>/</i> Carimañolas <i>/</i> Ceviche de corvina <i>/</i> Hojaldras <i>/</i> Arroz con pollo <i>/</i> Raspao <i>/</i> Tamal de olla <i>/</i></span></div>
 
   <section id="resenas">
     <div class="wrap">
@@ -233,10 +233,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         </div>
       </div>
       <div class="stories">
-        <div class="story"><div class="ring"><div style="--tone:var(--tile-b)"></div></div>Tacos</div>
+        <div class="story"><div class="ring"><div style="--tone:var(--tile-b)"></div></div>Fondas</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-a)"></div></div>Desayunos</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-e)"></div></div>Postres</div>
-        <div class="story"><div class="ring"><div style="--tone:var(--tile-c)"></div></div>Callejera</div>
+        <div class="story"><div class="ring"><div style="--tone:var(--tile-c)"></div></div>Ruta en carro</div>
         <div class="story"><div class="ring"><div style="--tone:var(--tile-f)"></div></div>Mariscos</div>
       </div>
     </div>
@@ -256,7 +256,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         </ul>
       </div>
       <form id="form" novalidate>
-        <label for="f-nombre">Nombre del negocio<input id="f-nombre" type="text" required placeholder="Taquería El Güero"></label>
+        <label for="f-nombre">Nombre del negocio<input id="f-nombre" type="text" required placeholder="Fonda Doña Mari"></label>
         <label for="f-tipo">Tipo de colaboración
           <select id="f-tipo"><option>Reseña en video</option><option>Historias</option><option>Fotos del menú</option><option>Evento o apertura</option></select>
         </label>
@@ -272,12 +272,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <script>
 const REVIEWS=[
-  {n:"Birria de res con consomé",l:"Puesto de la esquina",c:"callejera",p:"$6",s:9.1,t:"--tile-b",q:"El consomé solo ya vale el viaje."},
-  {n:"Smash burger doble",l:"Hamburguesería del centro",c:"restaurante",p:"$11",s:7.4,t:"--tile-d",q:"Bordes crujientes, pan que se rinde a la mitad."},
-  {n:"Pupusas revueltas",l:"Pupusería familiar",c:"callejera",p:"$3",s:8.6,t:"--tile-a",q:"El curtido es casero y se nota."},
-  {n:"Ramen tonkotsu",l:"Barra de ramen",c:"restaurante",p:"$15",s:8.2,t:"--tile-c",q:"Caldo de 12 horas, fideos firmes."},
-  {n:"Churros con cajeta",l:"Carrito del parque",c:"postre",p:"$4",s:8.9,t:"--tile-e",q:"Recién fritos, crujen hasta el final."},
-  {n:"Tres leches de pistache",l:"Pastelería de barrio",c:"postre",p:"$5",s:6.8,t:"--tile-f",q:"Rico, pero demasiado dulce para repetir."}
+  {n:"Ceviche de corvina",l:"Kiosco de mariscos",c:"callejera",p:"$5",s:9.1,t:"--tile-c",q:"Limón justo, corvina fresca y ají chombo que despierta."},
+  {n:"Hojaldras con bistec",l:"Fonda de barrio",c:"callejera",p:"$3.50",s:8.6,t:"--tile-a",q:"El desayuno panameño que arregla cualquier mañana."},
+  {n:"Carimañolas de carne",l:"Puesto de la esquina",c:"callejera",p:"$1",s:7.8,t:"--tile-d",q:"Crujientes por fuera, falta un poco de relleno."},
+  {n:"Arroz con pollo y tajadas",l:"Restaurante familiar",c:"restaurante",p:"$7",s:8.2,t:"--tile-b",q:"Porción generosa, tajadas bien maduras."},
+  {n:"Pescado frito entero",l:"Restaurante de playa",c:"restaurante",p:"$14",s:7.4,t:"--tile-f",q:"Buen pescado, el patacón llegó frío."},
+  {n:"Raspao con leche condensada",l:"Carrito del parque",c:"postre",p:"$1.50",s:8.9,t:"--tile-e",q:"El mejor remedio contra el calor de mediodía."}
 ];
 const grid=document.getElementById('grid');
 function render(f){
