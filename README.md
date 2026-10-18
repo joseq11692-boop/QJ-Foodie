@@ -1,4 +1,4 @@
-# QJ Foodie
+# Qook Foodie
 
 Sistema de trabajo para construir una marca de contenido gastronómico al nivel de los mejores creadores del mundo.
 
@@ -12,6 +12,8 @@ Sistema de trabajo para construir una marca de contenido gastronómico al nivel 
 | [`crecimiento/`](crecimiento/) | Métricas, rutina de análisis y plan de los primeros 90 días |
 | [`plantillas/`](plantillas/) | Guiones y fichas listas para copiar en cada video |
 | [`web/`](web/) | Modelo de página web (`web/index.html`, ábrelo en el navegador) |
+
+Instagram: [@qookfoodie](https://www.instagram.com/qookfoodie/)
 
 ## Las 5 reglas que comparten los mejores
 

@@ -10,7 +10,7 @@
 |---|---|---|---|
 | | | | |
 
-## Escala QJ
+## Escala Qook
 - Sabor (40%):
 - Relación calidad-precio (25%):
 - Experiencia / ambiente (20%):

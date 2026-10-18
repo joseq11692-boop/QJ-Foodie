@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>QJ Foodie</title>
+<title>Qook Foodie</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-/* Layout: una "comanda" de restaurante como hilo visual — encabezado tipo cartel, tickets con precio y nota, Escala QJ calculable */
+/* Layout: una "comanda" de restaurante como hilo visual — encabezado tipo cartel, tickets con precio y nota, Escala Qook calculable */
 :root{
   --bg:#FFFDF6; --surface:#FFFFFF; --ink:#1E1A2B; --muted:#625B70; --line:#E6E0D3;
   --saffron:#F2B200; --saffron-ink:#1E1A2B; --chili:#C9302C;
@@ -97,7 +97,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 .card .meta{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:.78rem;color:var(--muted)}
 .card p.quote{color:var(--muted);font-size:.98rem}
 
-/* Escala QJ */
+/* Escala Qook */
 .scale{background:var(--surface);border-block:1px solid var(--line)}
 .scale-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .scale-grid > *{min-width:0}
@@ -161,15 +161,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <header>
   <nav class="wrap nav" aria-label="Principal">
-    <a class="logo" href="#inicio"><b>QJ</b> Foodie</a>
+    <a class="logo" href="#inicio"><b>Qook</b> Foodie</a>
     <ul>
       <li><a href="#resenas">Reseñas</a></li>
       <li><a href="#cocina">Mi cocina</a></li>
-      <li><a href="#escala">Escala QJ</a></li>
+      <li><a href="#escala">Escala Qook</a></li>
       <li><a href="#instagram">Instagram</a></li>
       <li><a href="#colabora">Colabora</a></li>
     </ul>
-    <a class="btn" href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">@jose_q116</a>
+    <a class="btn" href="https://www.instagram.com/qookfoodie/" target="_blank" rel="noopener">@qookfoodie</a>
   </nav>
 </header>
 
@@ -178,7 +178,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <p class="label">Panamá · Reseñas · Recetas caseras</p>
       <h1 style="margin-top:14px">Pruebo la comida de Panamá para que tú sepas <mark>dónde vale la pena.</mark></h1>
-      <p class="lede">Reseño fondas y restaurantes con la Escala QJ, y también cocino en casa y subo mis platos con la receta.</p>
+      <p class="lede">Reseño fondas y restaurantes con la Escala Qook, y también cocino en casa y subo mis platos con la receta.</p>
       <div class="cta">
         <a class="btn" href="#resenas">Ver reseñas</a>
         <a class="btn ghost" href="#cocina">Ver mis recetas</a>
@@ -193,7 +193,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <div class="row"><span>Precio</span><span>9.5</span></div>
       <div class="row"><span>Experiencia</span><span>7.5</span></div>
       <div class="row"><span>¿Volvería?</span><span>Sí</span></div>
-      <div class="score"><span>ESCALA QJ</span><b>8.8</b></div>
+      <div class="score"><span>ESCALA QOOK</span><b>8.8</b></div>
       <span class="example">Ejemplo · reemplazar con tu reseña real</span>
     </aside>
   </div>
@@ -222,7 +222,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p>Recetas que preparo en casa y subo a Instagram, con tiempo, porciones y lo que necesitas. Si las haces, etiquétame.</p>
       </div>
       <div class="recipes" id="recipes"></div>
-      <div style="margin-top:36px"><a class="btn" href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Ver mis platos en Instagram</a></div>
+      <div style="margin-top:36px"><a class="btn" href="https://www.instagram.com/qookfoodie/" target="_blank" rel="noopener">Ver mis platos en Instagram</a></div>
     </div>
   </section>
 
@@ -230,7 +230,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div class="wrap scale-grid">
       <div>
         <p class="label">Mi sistema</p>
-        <h2 style="margin-top:8px">La Escala QJ</h2>
+        <h2 style="margin-top:8px">La Escala Qook</h2>
         <p style="color:var(--muted);margin-top:16px;max-width:44ch">Cuatro criterios con peso fijo, siempre los mismos. Mueve los controles y calcula la nota de tu último lugar.</p>
         <div class="weights" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
         <div class="crit" style="margin-top:28px">
@@ -256,7 +256,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <h2 style="margin-top:8px">Sígueme en Instagram</h2>
         <p style="color:var(--muted);margin-top:16px;max-width:42ch">Las visitas en vivo, los lugares nuevos y las votaciones de dónde voy después salen primero en mis historias.</p>
         <div class="cta" style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
-          <a class="btn" href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Abrir @jose_q116</a>
+          <a class="btn" href="https://www.instagram.com/qookfoodie/" target="_blank" rel="noopener">Abrir @qookfoodie</a>
         </div>
       </div>
       <div class="stories">
@@ -274,7 +274,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <div>
         <p class="label">Para restaurantes y marcas</p>
         <h2 style="margin-top:8px">Trabajemos juntos</h2>
-        <p style="color:var(--muted);margin-top:16px;max-width:44ch">Toda colaboración se declara en el video. La nota de la Escala QJ no se vende.</p>
+        <p style="color:var(--muted);margin-top:16px;max-width:44ch">Toda colaboración se declara en el video. La nota de la Escala Qook no se vende.</p>
         <ul class="offer">
           <li>Reseña en video (Reel / TikTok)<span>1 video</span></li>
           <li>Cobertura en historias<span>3–5 historias</span></li>
@@ -296,7 +296,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   </section>
 </main>
 
-<footer><div class="wrap"><span>QJ Foodie · Reseñas honestas y recetas caseras</span><a href="https://www.instagram.com/jose_q116/" target="_blank" rel="noopener">Instagram @jose_q116</a></div></footer>
+<footer><div class="wrap"><span>Qook Foodie · Reseñas honestas y recetas caseras</span><a href="https://www.instagram.com/qookfoodie/" target="_blank" rel="noopener">Instagram @qookfoodie</a></div></footer>
 
 <script>
 const REVIEWS=[
@@ -352,7 +352,7 @@ document.getElementById('form').addEventListener('submit',e=>{
   const note=document.getElementById('f-note');
   if(!document.getElementById('f-nombre').value.trim()){note.className='notice';note.textContent='Escribe el nombre del negocio para continuar.';return}
   note.className='notice ok';
-  note.textContent='Propuesta lista. Este modelo aún no envía mensajes: mándala por mensaje directo a @jose_q116 en Instagram.';
+  note.textContent='Propuesta lista. Este modelo aún no envía mensajes: mándala por mensaje directo a @qookfoodie en Instagram.';
 });
 </script>
 </body>

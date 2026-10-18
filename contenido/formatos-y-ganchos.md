@@ -35,7 +35,7 @@
 
 ## Formatos en serie (crean hábito)
 
-- **Calificación propia:** "Escala QJ" del 1 al 10, siempre al final.
+- **Calificación propia:** "Escala Qook" del 1 al 10, siempre al final.
 - **Ruta:** "Comiendo [ciudad] con [cantidad] dólares".
 - **Versus:** barato vs. caro, casero vs. restaurante, viral vs. original.
 - **Ciencia:** "Por qué funciona" — un dato técnico por receta.
