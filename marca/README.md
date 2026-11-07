@@ -13,3 +13,11 @@ Logo "Qook" convertido a vector desde el diseño original de la cuenta. Los `.sv
 Colores: naranja `#F28020`, vino `#520E33`, blanco `#FFFFFF`, crema `#F3E9D8`. Tipografía de "FOODIE" y el sello: Archivo Black (ya convertida a trazos).
 
 `qook-sueteres-muestra.png` muestra cómo se ve cada combinación.
+
+## Logo general (`logo/`)
+
+| Archivo | Uso |
+|---|---|
+| `qook-foodie-logo` | Logo principal, fondo transparente, para fondos claros |
+| `qook-foodie-logo-fondo-oscuro` | Versión con contorno naranja, para fondos oscuros |
+| `qook-foodie-perfil-naranja` / `-crema` / `-vino` | Foto de perfil de Instagram (1080×1080), el logo cabe dentro del círculo |
